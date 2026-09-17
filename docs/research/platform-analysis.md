@@ -210,6 +210,16 @@ The analysis should remain descriptive and evidence-based. Potential gaps should
 ---
 
 ## Cross-Platform Findings
+## Key Findings from Platform Benchmarking
+1. Kenya already has substantial climate-information infrastructure through KMD.
+2. ICPAC provides regional climate, environmental, agricultural and hazard information.
+3. Global platforms such as Copernicus provide very large-scale datasets, APIs and analysis capabilities.
+4. NASA Giovanni demonstrates web-based scientific data analysis and visualization.
+5. World Bank CCKP demonstrates the integration of climate information with development and risk analysis.
+6. Existing platforms differ substantially in target users, geographic scope and technical complexity.
+7. The potential opportunity should therefore not be assumed to be simply "more climate data."
+8. Further research is needed to determine whether users experience problems with discovery, integration, interpretation, monitoring or decision support despite the existence of these platforms.
+9. Dataset licensing must be investigated before designing a commercial product based on third-party data.
 
 ### Common Features
 
@@ -226,3 +236,5 @@ The analysis should remain descriptive and evidence-based. Potential gaps should
 ### Questions for User Research
 
 *To be completed based on observations from the platforms.*
+
+## Key Findings from Platform Benchmarking
