@@ -231,3 +231,16 @@ Proceed with validation and technical development, beginning with Kenya.
 The project will focus on the gap between **climate information availability** and **practical climate intelligence for specific locations and decisions**.
 
 The initial objective is to determine exactly where that gap is most valuable to address.
+
+
+## Current Focus
+
+The initial focus of Africa Climate Intelligence is:
+
+**Primary users:** Humanitarian and development organizations working in Kenya.
+
+**Initial geography:** Kenya.
+
+The project is investigating how existing weather, climate, hazard, and geospatial information can be made more accessible, integrated, interpretable, and useful for organizational planning, monitoring, analysis, and reporting.
+
+This focus is provisional and will be validated through further research and user interviews.
