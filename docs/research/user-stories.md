@@ -1,98 +1,162 @@
-# Initial User Stories
+# Day 6 — Three User Stories
 
-## Context
+## Purpose
 
-These user stories describe preliminary hypotheses about what humanitarian and development organizations working in Kenya may need from a climate-information platform.
-
-They have not yet been validated through user interviews.
+These user stories represent three potential user groups for the Africa Climate Intelligence platform. They are hypotheses to be validated through user research and are not yet confirmed product requirements.
 
 ---
 
-## User Story 1 — Monitor a Project Location
+## 1. Researcher
 
-**As a** programme officer working on a humanitarian or development project in Kenya,
+### User Story
 
-**I want to** view relevant weather, climate and hazard information for my project locations in one place,
+**As a** climate, environmental, GIS, or development researcher,
 
-**so that** I can understand changing conditions that could affect programme activities and planning.
+**I want to** discover, access, understand and analyze weather and climate datasets for Kenya,
 
-### Assumptions to Validate
+**so that** I can conduct research without spending excessive time locating, cleaning, understanding and combining data from different sources.
 
-* Users monitor climate/weather conditions for specific project locations.
-* Users currently obtain information from multiple sources.
-* Relevant information includes weather, climate and hazards.
-* A consolidated view would reduce information-search effort.
+### Potential Needs
 
-### Questions for User Research
+* Dataset discovery
+* Historical climate data
+* Metadata
+* Spatial data
+* Time-series data
+* Download/API access
+* Data provenance
+* Documentation
+* GIS-compatible formats
+* Dataset comparison
 
-* How frequently do users perform this task?
-* Which locations do they monitor?
-* Which indicators matter?
-* Which sources do they currently use?
-* What is difficult about the current process?
+### Problem Hypothesis
 
----
+Researchers may spend considerable time navigating multiple data providers and understanding differences in datasets, formats, spatial resolution and metadata.
 
-## User Story 2 — Combine Climate and GIS Data
+### Validation Questions
 
-**As an** information-management or GIS officer supporting a humanitarian or development organization in Kenya,
-
-**I want to** combine climate and hazard information with project and geographic data,
-
-**so that** I can produce location-specific analysis, maps and reports without repeatedly processing multiple datasets manually.
-
-### Assumptions to Validate
-
-* GIS/data officers regularly combine multiple datasets.
-* Climate and geographic data come from different sources.
-* Data preparation creates repeated manual work.
-* Automation could reduce processing time.
-
-### Questions for User Research
-
-* Which datasets are combined?
-* How frequently?
-* What software is used?
-* Which processing steps are repeated?
-* How much time does the process require?
-* What errors or quality issues occur?
-* Would automated processing be trusted?
+* Which sources do researchers currently use?
+* What takes the most time?
+* Which datasets are difficult to find?
+* What metadata do they need?
+* Do they need analysis tools or primarily data access?
+* Would they use an aggregation platform?
 
 ---
 
-## User Story 3 — Communicate Climate Information
+## 2. NGO / Consultant
 
-**As a** programme or monitoring-and-evaluation officer working in Kenya,
+### User Story
 
-**I want to** generate a simple summary of climate and weather conditions affecting my project area,
+**As an** NGO programme, M&E, GIS, climate-resilience, humanitarian, or environmental consultant working in Kenya,
 
-**so that** I can communicate relevant trends and risks to programme managers and decision-makers without requiring them to interpret raw climate datasets.
+**I want to** quickly obtain and use weather, climate, hazard and geographic information for the areas where I work,
 
-### Assumptions to Validate
+**so that** I can support project planning, monitoring, risk assessment, mapping, reporting and decision-making.
 
-* Programme teams need to communicate climate information internally.
-* Decision-makers may not have GIS or climate expertise.
-* Current reporting may require manual preparation.
-* Users need information rather than raw datasets alone.
+### Potential Needs
 
-### Questions for User Research
+* Location-specific information
+* Weather and climate indicators
+* Hazard information
+* Maps
+* Historical trends
+* Forecasts
+* Project-location analysis
+* Downloadable data
+* Automated reports
+* GIS integration
+* Multiple data sources
 
-* Who prepares these summaries?
-* Who receives them?
-* What information do decision-makers need?
-* How frequently are reports produced?
-* What format is preferred?
-* What indicators are considered credible?
-* How much manual work is involved?
+### Problem Hypothesis
+
+Organizations may need to combine information from several specialized systems when preparing project analysis, maps, reports or risk assessments.
+
+### Validation Questions
+
+* What information do organizations use?
+* Which platforms do they currently use?
+* How many sources are involved?
+* What manual processing is required?
+* How frequently is the workflow repeated?
+* What outputs do they produce?
+* Would they pay for time savings or specialized analysis?
 
 ---
 
-## Cross-Cutting Hypothesis
+## 3. Developer
 
-The three stories represent a potential workflow:
+### User Story
 
-**Monitor → Analyze → Communicate**
+**As a** developer building a climate, environmental, humanitarian, agricultural or GIS application,
 
-The initial product hypothesis is that humanitarian and development organizations may benefit from a system that helps them move from distributed climate information toward location-specific, decision-relevant outputs.
+**I want to** access reliable, well-documented and programmatically accessible weather and climate data,
 
-This hypothesis must be validated through user research before these stories are converted into formal product requirements.
+**so that** I can integrate climate information into applications without manually downloading and processing datasets.
+
+### Potential Needs
+
+* APIs
+* Documentation
+* Authentication
+* Stable endpoints
+* JSON/CSV/GeoJSON
+* Raster access
+* Geospatial services
+* Metadata
+* Data dictionaries
+* Rate limits
+* Versioning
+* Licensing information
+* Example code
+
+### Problem Hypothesis
+
+Climate information can be distributed across different systems with different APIs, formats, access requirements and licensing conditions.
+
+### Validation Questions
+
+* Which APIs do developers currently use?
+* What makes a climate API difficult to work with?
+* Which formats are preferred?
+* What reliability requirements exist?
+* What documentation is missing?
+* Which datasets would developers actually integrate?
+* Would developers pay for simplified APIs or processed datasets?
+
+---
+
+# Cross-User Comparison
+
+| User             | Primary Job                      | Potential Pain Point               | Potential Value               |
+| ---------------- | -------------------------------- | ---------------------------------- | ----------------------------- |
+| Researcher       | Find and analyze data            | Discovery, metadata and processing | Faster research               |
+| NGO / Consultant | Apply information to projects    | Fragmented sources and workflows   | Faster analysis and reporting |
+| Developer        | Integrate data into applications | APIs, formats and documentation    | Easier integration            |
+
+## Current Hypothesis
+
+The three groups represent different potential forms of value:
+
+**Researcher:** Find → Understand → Analyze
+
+**NGO / Consultant:** Find → Combine → Apply → Report
+
+**Developer:** Discover → Access → Integrate → Build
+
+These user stories should be treated as hypotheses until validated through interviews, workflow observation and prototype testing.
+
+## Relationship to the Day 5 Primary Segment
+
+The Day 5 project decision identified **humanitarian and development organizations working in Kenya** as the provisional primary organizational/customer segment.
+
+The Day 6 user stories deliberately examine three different potential user types — **researchers, NGO/consultants, and developers** — to avoid prematurely assuming that every potential user has the same needs.
+
+The NGO/consultant user story is the closest match to the current primary segment. Researchers and developers are being examined as adjacent potential users who may interact with the platform independently or support humanitarian/development organizations.
+
+Further user research will determine:
+
+1. Which user group experiences the strongest recurring problem.
+2. Whether the primary customer should remain humanitarian/development organizations.
+3. Whether researchers or developers represent secondary customer segments.
+4. Whether different users require different products, features, or pricing models.
